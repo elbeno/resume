@@ -26,19 +26,22 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 %c C plus plus
-\def\cplusplus{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+\def\cplusplus{C\raisebox{0.4ex}{\tiny\textbf{++}}}
 \def\myplus{\raisebox{0.5ex}{\tiny\textbf{+}}}
 
 %sensitive info
-\def\myaddress{1 Blank Street}
-\def\mycity{Blank City, BL}
-\def\myzip{00000}
-\def\myphone{1 (555) 123-4567}
+%% \def\myaddress{3207 Esperanza}
+\def\myaddress{1729 Taxicab}
+\def\mycity{Irvine, CA}
+\def\myzip{92618}
+%% \def\myphone{1 (424) 241-6399}
+%% \def\myemail{ben@elbeno.com}
+\def\myphone{1 (555) 867-5309}
 \def\myemail{ben@example.com}
 
 % personal data
 \name{Ben}{Deane}
-\title{Principal Software Engineer}                               % optional, remove / comment the line if not wanted
+\title{Software Engineer}                               % optional, remove / comment the line if not wanted
 \address{\myaddress}{\mycity{ }\myzip}%{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{\myplus\myphone}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{\myplus1 (555) 123-4567}                    % optional, remove / comment the line if not wanted
@@ -48,7 +51,7 @@
 \social[linkedin]{elbeno}                  % optional, remove / comment the line if not wanted
 \social[twitter][twitter.com/ben_deane]{@ben\_deane}                  % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{I geek out on \cplusplus, functional programming, languages, Linux, emacs, network programming, systems architecture, simplicity.}
+\quote{I geek out on \cplusplus, languages, algorithms, architecture, APIs, teaching, functional and network programming.}
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -69,64 +72,63 @@
 
 \section{Experience}
 %\subsection{Vocational}
-\cventry{2014--current}{Principal Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{As a Principal Software Engineer, I am both the technical lead for a team, and a strategic contributor to Blizzard's companywide engineering culture and knowledge.\newline{}%
-\hfill{ }\newline{}%
-As the lead of a team of 8 engineers (my ``day job''), I:%
+\cventry{2018-current}{Principal Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{I work on the team that provides SDKs for the Battle.net platform to teams within Activision-Blizzard. Mostly \cplusplus{}, on Win32, macOS, CentOS, mobile and console platforms. As a Principal Software Engineer, I am a strategic contributor to Blizzard's companywide engineering culture and knowledge.\newline{}
 \begin{itemize}
-\item am responsible for shipping and support the \href{http://battle.net/app/}{Battle.net Desktop App}.
-\item work with engineers and PMs to plan, write tech specs, and develop logistical and technical roadmaps for features.
-\item do regular engineering work - architecting and implementing systems, code and API reviews and documentation, fixing bugs.
+\item Talks and workshops on engineering techniques and tools (e.g. Test Driven Development).
+\item Coordinate internal ``engineering lightning talks''.
+\item Created and moderate two internal mailing lists (``Good Code'' and ``\cplusplus'').
+\item Co-lead the \href{http://news.uci.edu/feature/ready-to-play/}{mentorship program for Computer Game Science students at UC Irvine}.
 \end{itemize}
-\hfill{ }\newline{}%
-As a strategic contributor to Blizzard (my ``principal duties''), I:%
-\begin{itemize}
-\item run talks and workshops on engineering techniques and tools (e.g. Test Driven Development).
-\item coordinate internal ``engineering lightning talks'', helping engineers to gain presentation skills and spread knowledge.
-\item created and moderate two internal mailing lists (``Good Code'' and ``\cplusplus'').
-\item co-lead Blizzard's \href{http://news.uci.edu/feature/ready-to-play/}{mentorship program for Computer Game Science students at UC Irvine}.
-\end{itemize}
-\hfill{ }\newline{}%
-I often field questions from engineers, particularly about architecture, \cplusplus{}, and git usage.\newline{}}
+\hfill{ }\newline{}}
 
-\cventry{2010--2014}{Lead Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{I led the team that architected and built the Battle.net service and client libraries that are currently used by \textit{Diablo III}, \textit{Hearthstone}, \textit{Overwatch}, and the Battle.net Desktop App.\newline{}%
-\hfill{ }\newline{}%
-In this role, I:%
+\cventry{2014--2018}{Principal Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Tech lead for the Battle.net Desktop Application: \cplusplus{} and JavaScript on Win32 and macOS.\newline{}%
 \begin{itemize}
-\item managed a team of 3-6 (it changed over time) engineers.
-\item handled live ops for my team's Battle.net systems.
-\item architected and implemented:
+\item Shipped and supported the \href{http://battle.net/app/}{Battle.net Desktop App}.
+\item Mentored and managed a team of 8 engineers.
+\item Worked with engineers and PMs to plan, write tech specs, develop technical roadmaps.
+\item Code and API reviews and documentation, bug fixing, codebase modernization.
+\item Architected and implemented systems: presence, network protocol handling, etc.
+\end{itemize}
+\hfill{ }\newline{}}
+
+\cventry{2010--2014}{Lead Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Led the team that built the Battle.net service that is currently used by all of Blizzard's games, \textit{Destiny 2}, and the Battle.net Desktop App. \cplusplus{} on Win32, OS X, and CentOS.\newline{}
+\begin{itemize}
+\item Managed a team of 3-6 engineers.
+\item Handled live ops for my team's Battle.net systems.
+\item Architected and implemented:
 \begin{itemize}
 \item the social systems and routing infrastructure of the Battle.net server cloud.
 \item the client APIs used by the game teams.
 \item queueing and game allocation among available game servers.
-\item the cooperative matchmaking service for \textit{Diablo III}, a system that handles on the order of a million open games at one time.
+\item the cooperative matchmaking service for \textit{Diablo III}.
 \end{itemize}
 \end{itemize}}
 
-\cventry{2008--2010}{Lead Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{I led the team (of 6) that architected and built the Battle.net client libraries that shipped with \textit{StarCraft II}, \textit{Heroes of the Storm}, and \textit{World of Warcraft}. Among other things, I personally built social systems, wrote the system to download and cache data on the client, and implemented an ActionScript-to-\cplusplus{} FFI and data marshaling system.\newline{}}
+\cventry{2008--2010}{Lead Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Led a team of 6 that built the Battle.net platform for \textit{StarCraft II}, \textit{Heroes of the Storm}, and \textit{World of Warcraft}. \cplusplus{} and ActionScript on Win32, Mac OS X, and RHEL. I built social systems, wrote the system to download and cache data on the client, and implemented an ActionScript-to-\cplusplus{} FFI and data marshaling system.\newline{}}
 
-\cventry{2005--2008}{Lead Software Engineer}{\href{http://www.ea.com/locations/los-angeles}{Electronic Arts}}{Playa del Rey, CA}{}{I led a team building \textit{Tiberium}, a hybrid FPS/RTS in the \textit{Command \& Conquer} universe using the Unreal 3 engine, and developed on PC, Xbox 360, and PS3. Among other things I did extensive work on improving the lighting, and on threading and optimization. In October 2008, EA cancelled the project.\newline{}}
+\cventry{2005--2008}{Lead Software Engineer}{\href{http://www.ea.com/locations/los-angeles}{Electronic Arts}}{Playa del Rey, CA}{}{Lead engineer on \textit{Tiberium}, a hybrid FPS/RTS in the \textit{Command \& Conquer} universe using the Unreal 3 engine on PC, Xbox 360, and PS3. I did extensive work on improving lighting, and on threading and optimization. In October 2008, EA cancelled the project.\newline{}}
 
-\cventry{2003--2005}{Senior Software Engineer}{\href{http://www.ea.com/locations/los-angeles}{Electronic Arts}}{Playa del Rey, CA}{}{I was lead of the subteam building the network game for \textit{Goldeneye: Rogue Agent}, an FPS that shipped on Xbox and PS2. I implemented the core of the network game, working with a remote team in Montréal that was building levels and adding features.\newline{}}
+\cventry{2003--2005}{Senior Software Engineer}{\href{http://www.ea.com/locations/los-angeles}{Electronic Arts}}{Playa del Rey, CA}{}{Network game lead for \textit{Goldeneye: Rogue Agent}, an FPS that shipped on Xbox and PS2. I implemented the core of the network game, working with a remote team in Montréal that was building levels and adding features.\newline{}}
 
-\cventry{2001--2003}{Software Engineer}{\href{http://www.kuju.com/}{Kuju Entertainment}}{Godalming, UK}{}{I gained console experience on PS2 at Kuju, acting as lead engineer during the finalling stage of \textit{Reign of Fire}, and then taking a role as network lead for \textit{Warhammer 40,000: Fire Warrior}, which was one of the first titles to support the PS2 broadband adaptor.\newline{}}
+\cventry{2001--2003}{Software Engineer}{\href{http://www.kuju.com/}{Kuju Entertainment}}{Godalming, UK}{}{PS2 and Xbox development. Lead engineer while finalling \textit{Reign of Fire}, network lead for \textit{Warhammer 40,000: Fire Warrior}, one of the first online PS2 titles.\newline{}}
 
-\cventry{1995--2001}{Software Engineer}{\href{https://en.wikipedia.org/wiki/Bullfrog_Productions}{Bullfrog/Electronic Arts}}{Guildford/Chertsey, UK}{}{As a jack-of-all-trades engineer, I tackled many tasks: gameplay, systems, tools, UI, networking, localization, audio. My specific area of expertise became networking.\newline{}}
+\cventry{1995--2001}{Software Engineer}{\href{https://en.wikipedia.org/wiki/Bullfrog_Productions}{Bullfrog/Electronic Arts}}{Guildford/Chertsey, UK}{}{Jack-of-all-trades: gameplay, systems, tools, UI, networking, localization, audio.\newline{}}
 \section{Conference Talks}
 \cvitemwithcomment{CppCon 2015}{\href{https://www.youtube.com/watch?v=OPoZWnYIcP4}{\color{blue}{Testing Battle.net}}}{}
 \cvitemwithcomment{CppCon 2016}{\href{https://www.youtube.com/watch?v=ojZbFIQSdl8}{\color{blue}{Using Types Effectively}}}{}
 \cvitemwithcomment{CppCon 2016}{\href{https://www.youtube.com/watch?v=B6twozNPUoA}{\color{blue}{\texttt{std::accumulate}: Exploring an Algorithmic Empire}}}{}
+\cvitemwithcomment{\cplusplus{}Now 2017}{\href{https://www.youtube.com/watch?v=HMB9oXFobJc}{\color{blue}{\texttt{constexpr} ALL the Things!}}}{(with Jason Turner -- Best Presentation Award)}
 
-\section{Miscellaneous skills}
+\section{Miscellaneous Skills}
 \cvitemwithcomment{Expert}{\cplusplus, git}{}
-\cvitemwithcomment{Intermediate}{Python, Haskell, JavaScript, Unix, Lisp, French, \LaTeX, maths}{}
+\cvitemwithcomment{Intermediate}{Python, Haskell, JavaScript, Unix, Lisp, French}{}
 
 \section{Education}
 \cventry{1992--1995}{MA (Cantab) Computer Science}{}{}{}{Emmanuel College, University of Cambridge}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \section{The Boring Stuff}
-\cvitem{}{I am a UK citizen and a US Permanent Resident (``green card'' holder).\newline{}References available on request.}
+\cvitem{}{UK citizen, US permanent resident. References by request.}
 
 %% \section{Miscellaneous skills}
 %% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
@@ -134,7 +136,9 @@ In this role, I:%
 %% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
 
 %% \section{Gameography}
-%% \cvitem{in beta}{Overwatch}
+%% \cvitem{upcoming}{World of Warcraft: Battle for Azeroth}
+%% \cvitem{2016}{World of Warcraft: Legion}
+%% \cvitem{2016}{Overwatch}
 %% \cvitem{2015}{StarCraft II: Legacy of the Void}
 %% \cvitem{2015}{Heroes of the Storm}
 %% \cvitem{2014}{World of Warcraft: Warlords of Draenor}
