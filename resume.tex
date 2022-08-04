@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{purple}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \moderncvicons{awesome}
 
 \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
@@ -30,15 +30,15 @@
 \def\myplus{\raisebox{0.5ex}{\tiny\textbf{+}}}
 
 %sensitive info
-\def\myaddress{1729 Taxicab}
-\def\mycity{Irvine, CA}
-\def\myzip{92618}
+\def\myaddress{1729 Taxicab Drive}
+\def\mycity{Denver, CO}
+\def\myzip{80202}
 \def\myphone{1 (555) 867-5309}
 \def\myemail{ben@example.com}
 
 % personal data
 \name{Ben}{Deane}
-\title{Software Engineer}                               % optional, remove / comment the line if not wanted
+\title{Principal Engineer, Tech Lead}                     % optional, remove / comment the line if not wanted
 \address{\myaddress}{\mycity{ }\myzip}%{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{\myplus\myphone}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{\myplus1 (555) 123-4567}                    % optional, remove / comment the line if not wanted
@@ -46,9 +46,9 @@
 \email{\myemail}                               % optional, remove / comment the line if not wanted
 \social[github]{elbeno}                  % optional, remove / comment the line if not wanted
 \social[linkedin]{elbeno}                  % optional, remove / comment the line if not wanted
-\social[twitter][twitter.com/ben_deane]{@ben\_deane}                  % optional, remove / comment the line if not wanted
+%\social[twitter][twitter.com/ben\_deane]{@ben_deane}                  % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{I geek out on \cplusplus, languages, algorithms, architecture, APIs, teaching, functional and network programming.}
+\quote{I geek out on \cplusplus, languages, algorithms, architecture, APIs, teaching, mentoring, functional and network programming.}
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -69,28 +69,30 @@
 
 \section{Experience}
 %\subsection{Vocational}
-\cventry{2018-current}{Principal Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{I work on the team that provides SDKs for the Battle.net platform to teams within Activision-Blizzard. Mostly \cplusplus{}, on Win32, macOS, CentOS, mobile and console platforms. As a Principal Software Engineer, I am a strategic contributor to Blizzard's companywide engineering culture and knowledge.\newline{}
+\cventry{2018--current}{Tech Lead}{\href{https://www.quantlab.com/}{Quantlab}}{Denver, CO}{}{I lead a team of \cplusplus{} experts building a next-generation high-frequency trading platform.\newline{}
 \begin{itemize}
-\item Talks and workshops on engineering techniques and tools (e.g. Test Driven Development).
-\item Coordinate internal ``engineering lightning talks''.
-\item Created and moderate two internal mailing lists (``Good Code'' and ``\cplusplus'').
-\item Co-lead the \href{http://news.uci.edu/feature/ready-to-play/}{mentorship program for Computer Game Science students at UC Irvine}.
+\item Extremely modern \cplusplus{}: using \cplusplus{}20 features and beyond.
+\item Heavily compile-time oriented code, using strong typing and declarative semantics.
+\item Very low latency requirements: counting nanoseconds.
+\item Architecting and implementing composable, ergonomic APIs used by other teams.
+\item Mentoring and managing a team of 8 engineers (junior/senior mix).
+\item Working with other tech leads to solve any problem.
 \end{itemize}
 \hfill{ }\newline{}}
 
-\cventry{2014--2018}{Principal Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Tech lead for the Battle.net Desktop Application: \cplusplus{} and JavaScript on Win32 and macOS.\newline{}%
+\cventry{2014--2018}{Principal Software Engineer}{\href{https://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Tech lead for the \href{http://battle.net/app/}{Battle.net Desktop App}: \cplusplus{} and JavaScript on Win32 and macOS.\newline{}%
 \begin{itemize}
-\item Shipped and supported the \href{http://battle.net/app/}{Battle.net Desktop App}.
-\item Mentored and managed a team of 8 engineers.
 \item Worked with engineers and PMs to plan, write tech specs, develop technical roadmaps.
-\item Code and API reviews and documentation, bug fixing, codebase modernization.
 \item Architected and implemented systems: presence, network protocol handling, etc.
+\item Gave internal talks and workshops on engineering techniques and tools.
+\item Started internal ``engineering lightning talks'' and two internal tech mailing lists.
+\item Co-lead of the \href{http://news.uci.edu/feature/ready-to-play/}{mentorship program for Computer Game Science students at UC Irvine}.
 \end{itemize}
 \hfill{ }\newline{}}
 
-\cventry{2010--2014}{Lead Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Led the team that built the Battle.net service that is currently used by all of Blizzard's games, \textit{Destiny 2}, and the Battle.net Desktop App. \cplusplus{} on Win32, OS X, and CentOS.\newline{}
+\cventry{2010--2014}{Lead Software Engineer}{\href{https://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Team lead for the Battle.net service. \cplusplus{} on Win32, OS X, and CentOS.\newline{}
 \begin{itemize}
-\item Managed a team of 3-6 engineers.
+\item Mentored and managed a team of 6 engineers.
 \item Handled live ops for my team's Battle.net systems.
 \item Architected and implemented:
 \begin{itemize}
@@ -101,25 +103,25 @@
 \end{itemize}
 \end{itemize}}
 
-\cventry{2008--2010}{Lead Software Engineer}{\href{http://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Led a team of 6 that built the Battle.net platform for \textit{StarCraft II}, \textit{Heroes of the Storm}, and \textit{World of Warcraft}. \cplusplus{} and ActionScript on Win32, Mac OS X, and RHEL. I built social systems, wrote the system to download and cache data on the client, and implemented an ActionScript-to-\cplusplus{} FFI and data marshaling system.\newline{}}
+\cventry{2008--2010}{Lead Software Engineer}{\href{https://www.blizzard.com/}{Blizzard Entertainment}}{Irvine, CA}{}{Led a team of 6 that built the previous iteration of the Battle.net platform for \textit{StarCraft II}, \textit{Heroes of the Storm}, and \textit{World of Warcraft}. \cplusplus{} and ActionScript on Win32, Mac OS X, and RHEL. I built social systems, wrote the system to download and cache data on the client, and implemented an ActionScript-to-\cplusplus{} FFI and data marshaling system.\newline{}}
 
-\cventry{2005--2008}{Lead Software Engineer}{\href{http://www.ea.com/locations/los-angeles}{Electronic Arts}}{Playa del Rey, CA}{}{Lead engineer on \textit{Tiberium}, a hybrid FPS/RTS in the \textit{Command \& Conquer} universe using the Unreal 3 engine on PC, Xbox 360, and PS3. I did extensive work on improving lighting, and on threading and optimization. In October 2008, EA cancelled the project.\newline{}}
+\cventry{2005--2008}{Lead Software Engineer}{\href{https://www.ea.com/}{Electronic Arts}}{Playa del Rey, CA}{}{Lead engineer on \textit{Tiberium}, a hybrid FPS/RTS in the \textit{Command \& Conquer} universe using the Unreal 3 engine on PC, Xbox 360, and PS3. I did extensive work on improving lighting, and on threading and optimization. In October 2008, EA cancelled the project.\newline{}}
 
-\cventry{2003--2005}{Senior Software Engineer}{\href{http://www.ea.com/locations/los-angeles}{Electronic Arts}}{Playa del Rey, CA}{}{Network game lead for \textit{Goldeneye: Rogue Agent}, an FPS that shipped on Xbox and PS2. I implemented the core of the network game, working with a remote team in Montréal that was building levels and adding features.\newline{}}
+\cventry{2003--2005}{Senior Software Engineer}{\href{https://www.ea.com/}{Electronic Arts}}{Playa del Rey, CA}{}{Network game lead for \textit{Goldeneye: Rogue Agent}, an FPS that shipped on Xbox and PS2. I implemented the core of the network game, working with a remote team in Montréal that was building levels and adding features.\newline{}}
 
-\cventry{2001--2003}{Software Engineer}{\href{http://www.kuju.com/}{Kuju Entertainment}}{Godalming, UK}{}{PS2 and Xbox development. Lead engineer while finalling \textit{Reign of Fire}, network lead for \textit{Warhammer 40,000: Fire Warrior}, one of the first online PS2 titles.\newline{}}
+\cventry{2001--2003}{Software Engineer}{\href{https://en.wikipedia.org/wiki/Kuju_(company)}{Kuju Entertainment}}{London/Godalming, UK}{}{PS2 and Xbox development. Lead engineer while finalling \textit{Reign of Fire}, network lead for \textit{Warhammer 40,000: Fire Warrior}, one of the first online PS2 titles.\newline{}}
 
 \cventry{1995--2001}{Software Engineer}{\href{https://en.wikipedia.org/wiki/Bullfrog_Productions}{Bullfrog/Electronic Arts}}{Guildford/Chertsey, UK}{}{Jack-of-all-trades: gameplay, systems, tools, UI, networking, localization, audio.\newline{}}
-\section{Conference Talks}
-\cvitemwithcomment{CppCon 2015}{\href{https://www.youtube.com/watch?v=OPoZWnYIcP4}{\color{blue}{Testing Battle.net}}}{}
+\section{Selected Conference Talks}
 \cvitemwithcomment{CppCon 2016}{\href{https://www.youtube.com/watch?v=ojZbFIQSdl8}{\color{blue}{Using Types Effectively}}}{}
-\cvitemwithcomment{CppCon 2016}{\href{https://www.youtube.com/watch?v=B6twozNPUoA}{\color{blue}{\texttt{std::accumulate}: Exploring an Algorithmic Empire}}}{}
 \cvitemwithcomment{\cplusplus{}Now 2017}{\href{https://www.youtube.com/watch?v=HMB9oXFobJc}{\color{blue}{\texttt{constexpr} ALL the Things!}}}{(with Jason Turner -- Best Presentation Award)}
-\cvitemwithcomment{\cplusplus{}Now 2018}{\href{https://cppnow2018.sched.com/event/EC7i/easy-to-use-hard-to-misuse-declarative-style-in-c}{\color{blue}{Declarative Style in C++}}}{(Best Presentation Award)}
+\cvitemwithcomment{\cplusplus{}Now 2018}{\href{https://www.youtube.com/watch?v=2ouxETt75R4}{\color{blue}{Declarative Style in C++}}}{(Best Presentation Award)}
+\cvitemwithcomment{CppCon 2020}{\href{https://www.youtube.com/watch?v=InMh3JxbiTs}{\color{blue}{Constructing Generic Algorithms}}}{}
+\cvitemwithcomment{CppCon 2021}{\href{https://www.youtube.com/watch?v=zclxRbh4AN0}{\color{blue}{Composable \cplusplus{}}}}{}
 
 \section{Miscellaneous Skills}
 \cvitemwithcomment{Expert}{\cplusplus, git}{}
-\cvitemwithcomment{Intermediate}{Python, Haskell, JavaScript, Unix, Lisp, French}{}
+\cvitemwithcomment{Intermediate}{Python, Haskell, JavaScript, Linux, Lisp, French}{}
 
 \section{Education}
 \cventry{1992--1995}{MA (Cantab) Computer Science}{}{}{}{Emmanuel College, University of Cambridge}  % arguments 3 to 6 can be left empty
